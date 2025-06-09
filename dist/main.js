@@ -1,0 +1,1 @@
+(()=>{"use strict";console.log("приветики"),console.log(window),setTimeout((function(){console.log("Привет я сеттаймаут")}),1e4),console.log("one")})();

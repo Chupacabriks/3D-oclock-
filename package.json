@@ -1,0 +1,24 @@
+{
+  "name": "3dglo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chupacabriks/3D-oclock-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chupacabriks/3D-oclock-/issues"
+  },
+  "homepage": "https://github.com/Chupacabriks/3D-oclock-#readme",
+  "description": "",
+  "devDependencies": {
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1"
+  }
+}
