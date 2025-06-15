@@ -1,8 +1,8 @@
 
-
-
-
 import timer from './modules/timer';
+import menu from './modules/menu';
+import modal from './modules/modal';
+
 timer('29 june 2025');
-import twoTwo from './modules/two';
-twoTwo();
+menu();
+modal();
