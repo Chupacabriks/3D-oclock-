@@ -2,7 +2,6 @@ const modal = () => {
   console.log('это модуль');
   const modal = document.querySelector('.popup');
   const buttons = document.querySelectorAll('.popup-btn');
-  const closeBtn = modal.querySelector('.popup-close');
   const popupContent = modal.querySelector('.popup-content');
   const width = document.documentElement.clientWidth;
   console.log(width);
@@ -39,18 +38,19 @@ const modal = () => {
   });
 
 
-
-  closeBtn.addEventListener('click', () => {
-    if (width >= 768) {
-      popupContent.style.transform = 'scale(0.5)';
-      popupContent.style.opacity = '0';
-      setTimeout(() => {
-        modal.style.display = 'none';
-      }, 500);
-    } else {
-      modal.style.display = 'none'
+  modal.addEventListener('click', (e) => {
+    if (!e.target.closest('.popup-content') || e.target.classList.contains('popup-close')) {
+      if (width >= 768) {
+        popupContent.style.transform = 'scale(0.5)';
+        popupContent.style.opacity = '0';
+        setTimeout(() => {
+          modal.style.display = 'none';
+        }, 500);
+      } else {
+        modal.style.display = 'none'
+      }
     }
-  });
+  })
 };
 
 export default modal
