@@ -3,7 +3,7 @@ const input = () => {
 
   const calcBlock = document.querySelector('.calc-block');
   const input = calcBlock.querySelectorAll('input[type="text"]');
-  const inputsTextMes = document.querySelectorAll('input[type="text"], input[placeholder="Ваше сообщение"]');
+  const inputsTextMes = document.querySelectorAll('input[type="text"]:not(.calc-block input[type="text"]), input[placeholder="Ваше сообщение"]');
   const inputEmail = document.querySelectorAll('input[type="email"]');
   const inputTel = document.querySelectorAll('input[type="tel"]');
 
